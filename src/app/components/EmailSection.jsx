@@ -7,37 +7,48 @@ import Image from "next/image";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+const [email,setemail]=useState('')
+const [subject,setsubject]=useState('')
+const [message,setmessage]=useState('')
+const handlemChange = (e) => {
+  setmessage(e.target.value);
+};
+const handleeChange = (e) => {
+  setemail(e.target.value);
+};
+const handlesChange = (e) => {
+  setsubject(e.target.value);
+};
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "/api/send";
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+  //   // Form the request for sending data to the server.
+  //   const options = {
+  //     // The method is POST because we are sending data.
+  //     method: "POST",
+  //     // Tell the server we're sending JSON.
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     // Body of the request is the JSON data we created above.
+  //     body: JSONdata,
+  //   };
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
-  };
+  //   if (response.status === 200) {
+  //     console.log("Message sent.");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
 
   return (
     <section
@@ -56,12 +67,12 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <a target="_blank" href="https://github.com/deepak759">
             <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/deepak-sharma-97932a203/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+          </a>
         </div>
       </div>
       <div>
@@ -70,7 +81,7 @@ const EmailSection = () => {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <div className="flex flex-col" >
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -82,6 +93,7 @@ const EmailSection = () => {
                 name="email"
                 type="email"
                 id="email"
+                onChange={handleeChange}
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="jacob@google.com"
@@ -98,6 +110,7 @@ const EmailSection = () => {
                 name="subject"
                 type="text"
                 id="subject"
+                onChange={handlesChange}
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Just saying hi"
@@ -113,17 +126,18 @@ const EmailSection = () => {
               <textarea
                 name="message"
                 id="message"
+                onChange={handlemChange}
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Let's talk about..."
               />
             </div>
-            <button
-              type="submit"
+            <Link
+              href={`mailto:deepaksharma28787@gmail.com?subject=Regarding ${subject}&body=${message}`}
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Send Message
-            </button>
-          </form>
+            </Link>
+          </div>
         )}
       </div>
     </section>
