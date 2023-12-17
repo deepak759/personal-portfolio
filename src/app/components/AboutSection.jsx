@@ -8,13 +8,14 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
+      
       <ul className="list-disc pl-2">
+        <li>React Js</li>
         <li>Node.js</li>
         <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>MongoDB</li>
+        <li>C++</li>
+        <li>Python</li>
       </ul>
     ),
   },
@@ -22,9 +23,13 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+      <ul className="list-disc my-1 pl-2">
+        <li className="font-bold">B.Tech in Computer Science Engineering With 9.0 CGPA</li>
+        <li className="list-none ">Guru Gobind Singh Indraprastha University, New Delhi</li>
+        <li className="list-none ">2020-2024</li>
+        <li className="font-bold">Class 12th With 92.4%</li>
+        <li className="list-none ">G.B.S.S. School No.1, Shakti Nagar</li>
+        <li className="list-none ">2020</li>
       </ul>
     ),
   },
@@ -33,8 +38,24 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>
+          <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/B5YDHXU8WSXR">
+            Python Programing
+          </a>
+        
+        </li>
+        <li>
+        <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/XGVG89JE4P72">
+
+        Machine Learning
+        </a>
+        </li>
+        <li>
+        <a target="_blank" href="https://drive.google.com/drive/u/0/folders/1RTkagq4yu79OOUwuvg021Y1mLtcfOVqy">
+
+        Android Basics in Kotlin
+        </a>
+        </li>
       </ul>
     ),
   },
@@ -59,8 +80,8 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with JavaScript, React, Redux, Node.js, Express, SQL,
+            MongoDb, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>

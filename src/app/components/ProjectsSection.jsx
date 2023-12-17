@@ -7,57 +7,57 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Real Estate Web Application",
+    description: "Designed and developed a robust Real Estate MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, interactive maps, and user authentication for a user-friendly and feature-rich real estate experience.",
+    image: "/images/realestate.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/deepak759/Real-Estate-MERN-Web-Application",
+    previewUrl: "https://real-estate-cttt.onrender.com/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "E-Commerce Web Application",
+    description: "Designed and developed a robust Real Estate E-commerce MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, user authentication, and secure transactions for an immersive and user-friendly online property buying experience.",
+    image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/deepak759/E-Commerce-Web-Application",
+    previewUrl: "https://e-commerce-web-application-six.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Netflix Clone",
+    description: "Built a Netflix clone MERN web app with MongoDB, Express.js, React.js, and Node.js. Replicated the UI/UX for an immersive streaming experience. Demonstrated full-stack proficiency in a dynamic portfolio showcase.",
+    image: "/images/projects/netflix.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/deepak759/Netflix-Clone",
+    previewUrl: "https://lively-souffle-96074f.netlify.app/login",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Real Time News Web Application",
+    description: "Revolutionize your news experience with my real-time news web application, delivering up-to-the-minute updates on global events. Stay informed, engaged, and ahead of the curve with this dynamic and user-friendly platform for the modern news consumer.",
+    image: "/images/projects/news.png",
+    tag: ["All", "web"],
+    gitUrl: "https://github.com/deepak759/Daily-News",
+    previewUrl: "https://github.com/deepak759/Daily-News#readme",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Crypto Selling UI Design",
+    description: "Elevate your digital presence with a cutting-edge crypto selling web page design that seamlessly integrates user-friendly interfaces and visually stunning elements. Our project transforms complexity into simplicity, offering a streamlined platform for effortless cryptocurrency transactions",
+    image: "/images/projects/crypto.png",
+    tag: ["All", "Web","UI Design"],
+    gitUrl: "https://github.com/deepak759/Crypto-selling-UI",
+    previewUrl: "https://crypto-selling-ui.netlify.app/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "Personal Portfolio",
+    description: "Elevate your online presence with my personal portfolio web app, showcasing a dynamic display of my skills, projects, and achievements. Seamlessly designed for a captivating user experience, this platform reflects my professional journey and expertise in a visually stunning and interactive format.",
+    image: "/images/projects/port.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/deepak759/personal-portfolio",
+    previewUrl: "https://personal-portfolio-psi-ten.vercel.app/",
   },
 ];
 
@@ -97,8 +97,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="UI Design"
+          isSelected={tag === "UI Design"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
