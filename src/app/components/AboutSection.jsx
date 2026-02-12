@@ -9,24 +9,29 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <div className="flex flex-wrap gap-10">
-
-
-      <ul className="list-disc pl-2">
-        <li>React Js</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-        <li>Javascript</li>
-        <li>CSS</li>
-      </ul>
-      <ul className="list-disc pl-2">
-        <li>Tailwand CSS</li>
-        <li>SQL</li>
-        <li>Data Structure</li>
-        <li>Algorithm Design</li>
-        <li>C++</li>
-        <li>Python</li>
-      </ul>
+        <ul className="list-disc pl-2">
+          <li>React Js</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Javascript</li>
+          <li>CSS</li>
+        </ul>
+        <ul className="list-disc pl-2">
+          <li>NestJs</li>
+          <li>WebSockets</li>
+          <li>Data Structure</li>
+          <li>Algorithm Design</li>
+          <li>AWS</li>
+          <li>Devops</li>
+        </ul>
+        <ul className="list-disc pl-2">
+          <li>Tailwand CSS</li>
+          <li>SQL</li>
+          <li>UI Design</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
       </div>
     ),
   },
@@ -35,8 +40,12 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc my-1 pl-2">
-        <li className="font-bold">B.Tech in Computer Science Engineering With 9.0 CGPA</li>
-        <li className="list-none ">Guru Gobind Singh Indraprastha University, New Delhi</li>
+        <li className="font-bold">
+          B.Tech in Computer Science Engineering With 9.0 CGPA
+        </li>
+        <li className="list-none ">
+          Guru Gobind Singh Indraprastha University, New Delhi
+        </li>
         <li className="list-none ">2020-2024</li>
         <li className="font-bold">Class 12th With 92.4%</li>
         <li className="list-none ">G.B.S.S. School No.1, Shakti Nagar</li>
@@ -50,22 +59,28 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>
-          <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/B5YDHXU8WSXR">
+          <a
+            target="_blank"
+            href="https://www.coursera.org/account/accomplishments/certificate/B5YDHXU8WSXR"
+          >
             Python Programing
           </a>
-        
         </li>
         <li>
-        <a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/XGVG89JE4P72">
-
-        Machine Learning
-        </a>
+          <a
+            target="_blank"
+            href="https://www.coursera.org/account/accomplishments/certificate/XGVG89JE4P72"
+          >
+            Machine Learning
+          </a>
         </li>
         <li>
-        <a target="_blank" href="https://drive.google.com/drive/u/0/folders/1RTkagq4yu79OOUwuvg021Y1mLtcfOVqy">
-
-        Android Basics in Kotlin
-        </a>
+          <a
+            target="_blank"
+            href="https://drive.google.com/drive/u/0/folders/1RTkagq4yu79OOUwuvg021Y1mLtcfOVqy"
+          >
+            Android Basics in Kotlin
+          </a>
         </li>
       </ul>
     ),

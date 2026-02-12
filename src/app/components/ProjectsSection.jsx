@@ -5,10 +5,52 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+ 
+   {
+    id: 7,
+    title: "CrowdVault: A Crowdfunding Platform",
+    description:
+      "Designed and developed a robust Crowdfunding Platform MERN (MongoDB, Express.js, React.js, Node.js,Metamask,Stripe) web application, seamlessly integrating project listings, interactive maps, and user authentication for a user-friendly and feature-rich crowdfunding experience.",
+    image: "/images/image.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/deepak759/CrowdVault",
+    previewUrl: "https://crowdvault.vercel.app",
+  },
+   {
+    id: 8,
+    title: "Intern-X: A Internship and learning platform",
+    description:
+      "Designed and developed a robust Internship and learning platform MERN ( React.js, Tailwind, Vite) web application, seamlessly integrating internship, Courses listings, and user authentication for a user-friendly and feature-rich internship experience.",
+    image: "/images/intenx.png",
+    tag: ["All", "Web", "UI Design"],
+    gitUrl: "https://github.com/deepak759/Intern-X",
+    previewUrl: "https://internx-in.netlify.app",
+  },
+   {
+    id: 9,
+    title: "TaskVerse: A Software Project Management Tool",
+    description:
+      "Designed and developed a robust Software Project Management Tool MERN ( NextJs, React.js, Tailwind, APIs) web application, seamlessly integrating project management features, task tracking, and user authentication for a user-friendly and feature-rich project management experience.",
+    image: "/images/taskverse.png",
+    tag: ["All", "Web", "UI Design"],
+    gitUrl: "https://github.com/deepak759/Software-Project-Management",
+    previewUrl: "https://project-manager-tau-beryl.vercel.app",
+  },
+   {
+    id: 10,
+    title: "Vibration Monitoring System: A Real-Time Sensor Data Visualization",
+    description:
+      "Designed and developed a robust Vibration Monitoring System MERN ( React.js,Node, Websocket,Sensor,Modbus, APIs) web application, seamlessly integrating real-time sensor data visualization for a user-friendly and feature-rich monitoring experience.",
+    image: "/images/vibration.png",
+    tag: ["All", "Web", "UI Design"],
+    gitUrl: "https://github.com/deepak759/Temperature-Vibration-Sensor-Data",
+    previewUrl: "https://vibration-monitoring-system.netlify.app",
+  },
   {
     id: 1,
     title: "Real Estate Web Application",
-    description: "Designed and developed a robust Real Estate MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, interactive maps, and user authentication for a user-friendly and feature-rich real estate experience.",
+    description:
+      "Designed and developed a robust Real Estate MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, interactive maps, and user authentication for a user-friendly and feature-rich real estate experience.",
     image: "/images/realestate.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/deepak759/Real-Estate-MERN-Web-Application",
@@ -17,7 +59,8 @@ const projectsData = [
   {
     id: 2,
     title: "E-Commerce Web Application",
-    description: "Designed and developed a robust Real Estate E-commerce MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, user authentication, and secure transactions for an immersive and user-friendly online property buying experience.",
+    description:
+      "Designed and developed a robust Real Estate E-commerce MERN (MongoDB, Express.js, React.js, Node.js) web application, seamlessly integrating property listings, user authentication, and secure transactions for an immersive and user-friendly online property buying experience.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/deepak759/E-Commerce-Web-Application",
@@ -26,7 +69,8 @@ const projectsData = [
   {
     id: 3,
     title: "Netflix Clone",
-    description: "Built a Netflix clone MERN web app with MongoDB, Express.js, React.js, and Node.js. Replicated the UI/UX for an immersive streaming experience. Demonstrated full-stack proficiency in a dynamic portfolio showcase.",
+    description:
+      "Built a Netflix clone MERN web app with MongoDB, Express.js, React.js, and Node.js. Replicated the UI/UX for an immersive streaming experience. Demonstrated full-stack proficiency in a dynamic portfolio showcase.",
     image: "/images/projects/netflix.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/deepak759/Netflix-Clone",
@@ -35,7 +79,8 @@ const projectsData = [
   {
     id: 4,
     title: "Real Time News Web Application",
-    description: "Revolutionize your news experience with my real-time news web application, delivering up-to-the-minute updates on global events. Stay informed, engaged, and ahead of the curve with this dynamic and user-friendly platform for the modern news consumer.",
+    description:
+      "Revolutionize your news experience with my real-time news web application, delivering up-to-the-minute updates on global events. Stay informed, engaged, and ahead of the curve with this dynamic and user-friendly platform for the modern news consumer.",
     image: "/images/projects/news.png",
     tag: ["All", "web"],
     gitUrl: "https://github.com/deepak759/Daily-News",
@@ -44,21 +89,14 @@ const projectsData = [
   {
     id: 5,
     title: "Crypto Selling UI Design",
-    description: "Elevate your digital presence with a cutting-edge crypto selling web page design that seamlessly integrates user-friendly interfaces and visually stunning elements. Our project transforms complexity into simplicity, offering a streamlined platform for effortless cryptocurrency transactions",
+    description:
+      "Elevate your digital presence with a cutting-edge crypto selling web page design that seamlessly integrates user-friendly interfaces and visually stunning elements. Our project transforms complexity into simplicity, offering a streamlined platform for effortless cryptocurrency transactions",
     image: "/images/projects/crypto.png",
-    tag: ["All", "Web","UI Design"],
+    tag: ["All", "Web", "UI Design"],
     gitUrl: "https://github.com/deepak759/Crypto-selling-UI",
     previewUrl: "https://crypto-selling-ui.netlify.app/",
   },
-  {
-    id: 6,
-    title: "Personal Portfolio",
-    description: "Elevate your online presence with my personal portfolio web app, showcasing a dynamic display of my skills, projects, and achievements. Seamlessly designed for a captivating user experience, this platform reflects my professional journey and expertise in a visually stunning and interactive format.",
-    image: "/images/projects/port.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/deepak759/personal-portfolio",
-    previewUrl: "https://personal-portfolio-psi-ten.vercel.app/",
-  },
+ 
 ];
 
 const ProjectsSection = () => {
@@ -71,7 +109,7 @@ const ProjectsSection = () => {
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
