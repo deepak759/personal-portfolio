@@ -67,17 +67,34 @@ const handlesChange = (e) => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <a target="_blank" href="https://github.com/deepak759">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/deepak-sharma-97932a203/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </a>
-          <a target="_blank" href="https://leetcode.com/u/deepaksharma83407/">
-            <Image src={LeetCodeIcon} alt="LeetCode Icon" />
-          </a>
-        </div>
+       <div className="socials flex flex-row gap-2">
+  <a target="_blank" href="https://github.com/deepak759">
+    <Image
+      src={GithubIcon}
+      alt="Github Icon"
+      width={32}
+      height={32}
+    />
+  </a>
+
+  <a target="_blank" href="https://www.linkedin.com/in/deepak-sharma-97932a203/">
+    <Image
+      src={LinkedinIcon}
+      alt="Linkedin Icon"
+      width={32}
+      height={32}
+    />
+  </a>
+
+  <a target="_blank" href="https://leetcode.com/u/deepaksharma83407/">
+    <Image
+      src={LeetCodeIcon}
+      alt="LeetCode Icon"
+      width={32}
+      height={32}
+    />
+  </a>
+</div>
       </div>
       <div>
         {emailSubmitted ? (
