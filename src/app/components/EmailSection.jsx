@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import LeetCodeIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -72,6 +73,9 @@ const handlesChange = (e) => {
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/deepak-sharma-97932a203/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </a>
+          <a target="_blank" href="https://leetcode.com/u/deepaksharma83407/">
+            <Image src={LeetCodeIcon} alt="LeetCode Icon" />
           </a>
         </div>
       </div>
