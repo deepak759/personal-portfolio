@@ -74,7 +74,7 @@ const projectsData = [
     image: "/images/projects/netflix.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/deepak759/Netflix-Clone",
-    previewUrl: "https://lively-souffle-96074f.netlify.app/login",
+    previewUrl: "https://lively-souffle-96074f.netlify.app",
   },
   {
     id: 4,
