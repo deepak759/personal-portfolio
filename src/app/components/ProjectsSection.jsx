@@ -84,7 +84,7 @@ const projectsData = [
     image: "/images/projects/news.png",
     tag: ["All", "web"],
     gitUrl: "https://github.com/deepak759/Daily-News",
-    previewUrl: "https://github.com/deepak759/Daily-News#readme",
+    previewUrl: "https://timeline-in.netlify.app/",
   },
   {
     id: 5,
