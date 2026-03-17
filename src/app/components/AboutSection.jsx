@@ -27,7 +27,7 @@ const TAB_DATA = [
         </ul>
         <ul className="list-disc pl-2">
           <li>Tailwand CSS</li>
-          <li>SQL</li>
+         
           <li>UI Design</li>
           <li>C++</li>
           <li>Python</li>
@@ -57,7 +57,31 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc underline pl-2">
+      <li>
+          <a
+            target="_blank"
+            href="https://www.coursera.org/account/accomplishments/certificate/DHS0W6DBG27L"
+          >
+            IBM Backend Development
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/9NZJREONCEFS"
+          >
+            IBM Applied DevOps Engineering
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/NTX3HCZH4VDR"
+          >
+            IBM AI Engineering
+          </a>
+        </li>
         <li>
           <a
             target="_blank"
@@ -74,14 +98,7 @@ const TAB_DATA = [
             Machine Learning
           </a>
         </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://drive.google.com/drive/u/0/folders/1RTkagq4yu79OOUwuvg021Y1mLtcfOVqy"
-          >
-            Android Basics in Kotlin
-          </a>
-        </li>
+       
       </ul>
     ),
   },
@@ -100,7 +117,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.png" width={500} height={500} alt="" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
